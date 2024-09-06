@@ -1,47 +1,4 @@
-:root {
-    --background-color: #ffffff; /* Light mode background */
-    --text-color: #000000;       /* Light mode text */
-  }
-  
-  /* Dark Mode Variables */
-  body.dark-mode {
-    --background-color: #1c1c1c; /* Dark mode background */
-    --text-color: #f5f5f5;       /* Dark mode text */
-  }
-  
-  /* Apply variables to all key elements */
-  body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    transition: background-color 0.5s ease, color 0.5s ease;
-  }
-  
-    
-  button {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    
-  }
-  
-  a {
-    color: var(--text-color);
-  }
-/* Before (hardcoded colors) */ 
-section {
-    background-color: #fff;
-    color: #000;
-  }
-  
-  /* After (using CSS variables) */
- section {
-    background-color: var(--background-color);
-    color: var(--text-color);
-  }
-  .sidebar, .article, .navbar, .service, .testimonials, .blog-post-item {
-    background-color: var(--background-color);
-    color: var(--text-color);
-  }
-  .whatsapp-btn-container {
+.whatsapp-btn-container {
     position: fixed;
     right: 30px;
     opacity: 0;
