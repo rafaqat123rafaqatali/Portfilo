@@ -504,6 +504,20 @@ main {
   color: var(--light-gray);
 }
 
+.avatar-box img:hover {
+  animation: zoomInOut 1s ease forwards;
+}
+
+@keyframes zoomInOut {
+  0%, 100% {
+    transform: scale(1); /* Initial and final state is normal size */
+    box-shadow: none;
+  }
+  50% {
+    transform: scale(1.3); /* Zooms in at the middle of the animation */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+}
 
 
 
